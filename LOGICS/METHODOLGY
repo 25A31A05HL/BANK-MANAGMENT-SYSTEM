@@ -1,0 +1,111 @@
+1. Data Structure Design
+
+A Node structure is created to store bank account details:
+
+ID → Unique account number
+Name → Account holder name
+Balance → Current account balance
+Next Pointer → Points to the next account node
+
+This structure forms a singly linked list, allowing dynamic insertion and deletion of accounts.
+
+struct Node {
+    int id;
+    string name;
+    float balance;
+    Node* next;
+};
+2. Account Creation
+
+When the user selects Create Account, the system:
+
+Accepts account ID, name, and initial balance.
+Creates a new node dynamically.
+Inserts the node at the end of the linked list.
+
+This ensures that each new account is stored sequentially.
+
+3. Displaying Accounts
+
+For displaying all account details:
+
+The program checks if the linked list is empty.
+If not empty, it traverses the list node by node.
+Displays ID, name, and balance of every account.
+
+This helps in viewing all customer records.
+
+4. Searching an Account
+
+A separate search function is used:
+
+Accept account ID as input.
+Traverse the linked list.
+Compare each node’s ID.
+Return the matching account node.
+
+This function is reused in deposit and withdrawal operations.
+
+5. Deposit Operation
+
+For depositing money:
+
+User enters the account ID.
+The account is searched in the linked list.
+If found, the deposit amount is added to the balance.
+Updated balance is stored.
+
+This allows secure balance updating.
+
+6. Withdrawal Operation
+
+For withdrawing money:
+
+User enters account ID.
+The system searches for the account.
+Checks whether balance is sufficient.
+If sufficient, amount is deducted.
+Otherwise, an insufficient balance message is shown.
+
+This prevents overdrawing.
+
+7. Account Deletion
+
+For deleting an account:
+
+User enters account ID.
+The linked list is searched.
+If the account is found:
+Node is removed from the list
+Memory is deallocated
+If not found, an error message is shown.
+
+This ensures efficient removal of records.
+
+8. Menu-Driven Control
+
+The system uses a do-while loop to repeatedly display the menu:
+
+Create Account
+Display Accounts
+Deposit Money
+Withdraw Money
+Delete Account
+Exit
+
+The loop continues until the user selects Exit.
+
+This makes the program interactive and user-friendly.
+
+9. Dynamic Memory Management
+
+The program uses:
+
+new → To create account nodes dynamically
+delete → To remove nodes and free memory
+
+This improves memory efficiency.
+
+10. Program Termination
+
+When the user selects Exit, the loop terminates and the program ends.
