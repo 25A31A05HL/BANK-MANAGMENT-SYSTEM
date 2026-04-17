@@ -1,0 +1,55 @@
+ Time Complexity
+1. createAccount()
+You traverse to the end of the linked list to insert a new node.
+Worst case: list has n accounts
+ Time Complexity: O(n)
+
+2. displayAccounts()
+You traverse the entire list to print all accounts.
+
+ Time Complexity: O(n)
+
+3. searchAccount(int id)
+Linear search through the list.
+
+ Time Complexity: O(n)
+
+4. deposit()
+Calls searchAccount()
+
+ Time Complexity: O(n)
+
+5. withdraw()
+Calls searchAccount()
+
+ Time Complexity: O(n)
+
+6. deleteAccount()
+You may traverse the list to find the node.
+
+ Time Complexity: O(n)
+
+7. Main Menu Loop
+Runs k times (user-dependent)
+Each operation inside is at most O(n)
+
+ Overall: O(k × n)
+
+Space Complexity
+Each account is stored as a node in the linked list.
+If there are n accounts, you store n nodes.
+
+ Space Complexity: O(n)
+
+No extra significant memory (no arrays, recursion, etc.)
+ Summary Table
+Operation	Time Complexity
+Create Account	O(n)
+Display	O(n)
+Search	O(n)
+Deposit	O(n)
+Withdraw	O(n)
+Delete	O(n)
+
+ Overall Time Complexity: O(n) per operation
+ Space Complexity: O(n)
