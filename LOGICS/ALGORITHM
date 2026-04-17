@@ -1,0 +1,36 @@
+Algorithm: Bank System Using Linked List
+Step 1: Define Structure (Node)
+Create a structure (Node) to store:
+name
+id
+amount
+pointer to next node
+Step 2: Initialize Head
+Start with a head = NULL (empty list)
+Step 3: Create Account (Insert Node)
+Input user details (name, id, amount)
+Create a new node
+If head == NULL, assign new node to head
+Else, traverse to last node and insert
+Step 4: Display All Accounts
+Start from head
+Traverse until NULL
+Print each user's details
+Step 5: Deposit Money
+Input account id
+Search node with matching id
+Add amount to balance
+Step 6: Withdraw Money
+Input account id
+Search node
+Check if balance is sufficient
+Subtract amount
+Step 7: Search Account
+Input id
+Traverse list
+If found → display details
+Else → show "Not found"
+Step 8: Delete Account
+Input id
+Traverse list
+Adjust links to remove node
